@@ -11,10 +11,10 @@ const Navbar = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
             <Link className="mx-3 text-xl font-semibold" to="/course">
-              Course
+              Home
             </Link>
             <Link className="mx-3 text-xl font-semibold" to="/recharts">
-              Recharts
+              Statistics
             </Link>
             <Link className="mx-3 text-xl font-semibold" to="/blog">
               Blog
