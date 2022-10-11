@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="card w-full bg-base-100 shadow-xl header-bg">
+            <div className="card w-full bg-base-100 shadow-xl header-bg">
         <div className="card-body">
           <p>
             deserunt explicabo sed ipsum provident eaque doloremque, totam culpa
