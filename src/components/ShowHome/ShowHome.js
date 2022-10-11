@@ -1,6 +1,7 @@
 
 import src from 'daisyui';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShowHome = ({course}) => {
      const { logo, name, total, id } = course;
@@ -22,7 +23,7 @@ const ShowHome = ({course}) => {
             </div>
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary w-full">Buy Now</button>
+           <Link to={`/home/${id}`}> <button className="btn btn-primary w-full">Buy Now</button></Link>
           </div>
         </div>
       </div>

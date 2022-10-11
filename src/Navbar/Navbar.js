@@ -10,10 +10,10 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
-            <Link className="mx-3 text-xl font-semibold" to="/course">
+            <Link className="mx-3 text-xl font-semibold" to="/home">
               Home
             </Link>
-            <Link className="mx-3 text-xl font-semibold" to="/recharts">
+            <Link className="mx-3 text-xl font-semibold" to="/statistics">
               Statistics
             </Link>
             <Link className="mx-3 text-xl font-semibold" to="/blog">

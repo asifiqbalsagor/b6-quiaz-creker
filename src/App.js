@@ -22,7 +22,7 @@ function App() {
        },
         element:<Home></Home>},
         
-        {path:'/course',
+        {path:'/home',
         loader: () => {
 
           return fetch('https://openapi.programming-hero.com/api/quiz')
@@ -30,7 +30,7 @@ function App() {
        },
         element:<Home></Home>},
         {
-          path: "/course/:courseId",
+          path: "/home/:homeId",
           loader:  ({ params }) => {
             return fetch(
               `https://openapi.programming-hero.com/api/quiz/${params.courseId}`
