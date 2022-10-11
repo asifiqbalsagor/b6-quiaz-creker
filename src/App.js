@@ -38,7 +38,11 @@ function App() {
           },
           element: <HomeRoute></HomeRoute>,
         },
-        {path:'/recharts', element:<Statistics></Statistics>},
+        {path:'/statistics',
+        loader: () => {
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+       },
+         element:<Statistics></Statistics>},
         {path:'/blog', element:<Blog></Blog>},
         {path:'/*', element:<ErrorPage></ErrorPage>}
         
