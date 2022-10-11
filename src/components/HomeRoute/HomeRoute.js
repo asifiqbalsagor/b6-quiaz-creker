@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import ShowHome from '../ShowHome/ShowHome';
+import DisplayQuiz from '../DisplayQuiz/DispalyQuiz';
 
 const HomeRoute = () => {
     const course = useLoaderData();
@@ -16,11 +16,11 @@ const HomeRoute = () => {
           </div>
            <div className="w-8/12 mx-auto">
            {
-            courseQuiz.map(quiz => <ShowHome
+            courseQuiz.map(quiz => <DisplayQuiz
             key={quiz.id}
             quiz={quiz}
             data={data}
-            ></ShowHome>)
+            ></DisplayQuiz>)
            }
            </div>
         </div>
