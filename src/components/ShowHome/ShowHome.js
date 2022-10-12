@@ -19,11 +19,11 @@ const ShowHome = ({course}) => {
           <div className="flex justify-evenly">
             <h2 className="card-title text-2xl ">Name: {name}</h2>
             <div className="">
-              <p className=" text-lg font-semibold"> Total : {total}</p>
+              <p className=" text-lg font-semibold"> Quiz : {total}</p>
             </div>
           </div>
           <div className="card-actions justify-end">
-           <Link to={`/home/${id}`}> <button className="btn btn-primary w-full">Buy Now</button></Link>
+           <Link to={`/home/${id}`}> <button className="btn btn-primary w-full">Start Quiz</button></Link>
           </div>
         </div>
       </div>

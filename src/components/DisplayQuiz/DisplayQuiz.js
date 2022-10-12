@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 const DisplayQuiz = ({ quiz, data }) => {
   // console.log(quiz, data);
   const { options, question, correctAnswer } = quiz;
-  console.log(quiz)
 
   const ShowRightAnswer = () => {
     if (true) {
@@ -14,12 +13,12 @@ const DisplayQuiz = ({ quiz, data }) => {
     }
   };
 
-  const handleRadioBox = () => {
-    if (correctAnswer === options) {
-      // console.log(correctAnswer);
-      toast.error("incorrect answer", { autoClose: 500 });
-    } else {
+  const handleRadioBox = (e) => {
+    if (correctAnswer === e) {
       toast.success("correct answer", { autoClose: 500 });
+      // console.log(correctAnswer);
+    } else {
+      toast.error("incorrect answer", { autoClose: 500 });
     }
   };
 
@@ -45,7 +44,7 @@ const DisplayQuiz = ({ quiz, data }) => {
               <span className="label-text">{options[0]}</span>
               <input
                 type="radio"
-                onClick={() => handleRadioBox(options)}
+                onClick={(e) => handleRadioBox(e.target.innerText)}
                 name="radio-4"
                 className="radio radio-accent checkbox-primary"
               />
@@ -56,7 +55,7 @@ const DisplayQuiz = ({ quiz, data }) => {
               <span className="label-text">{options[1]}</span>
               <input
                 type="radio"
-                onClick={() => handleRadioBox(options)}
+                onClick={(e) => handleRadioBox(e.target.innerText)}
                 name="radio-4"
                 className="radio radio-accent checkbox-primary"
               />
@@ -67,7 +66,7 @@ const DisplayQuiz = ({ quiz, data }) => {
               <span className="label-text">{options[2]}</span>
               <input
                 type="radio"
-                onClick={() => handleRadioBox(options)}
+                onClick={(e) => handleRadioBox(e.target.innerText)}
                 name="radio-4"
                 className="radio radio-accent checkbox-primary"
               />
@@ -78,7 +77,7 @@ const DisplayQuiz = ({ quiz, data }) => {
               <span className="label-text">{options[3]}</span>
               <input
                 type="radio"
-                onClick={() => handleRadioBox(options)}
+                onClick={(e) => handleRadioBox(e.target.innerText)}
                 name="radio-4"
                 className="radio radio-accent checkbox-primary"
               />
