@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   let activeStyle = {
-    textDecoration: "underline",
+    textDecoration: "",
   };
 
   return (

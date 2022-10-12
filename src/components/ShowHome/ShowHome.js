@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 const ShowHome = ({course}) => {
      const { logo, name, total, id } = course;
   return (
-    <div>
-      <div className="card card-compact  bg-base-100 shadow-2xl">
+      <div className="card card-compact bg-base-100 shadow-2xl">
         <figure>
           <img
             className="w-1/2 bg-slate-600 rounded-xl my-4"
@@ -27,7 +26,6 @@ const ShowHome = ({course}) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

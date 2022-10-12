@@ -13,7 +13,7 @@ const Home = () => {
          <div>
                 <Header></Header>
              
-                     <div className="grid grid-cols-3 gap-6 w-10/12 mx-auto my-5 ">
+                     <div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 w-10/12 mx-auto my-5 ">
                      {
                           course.map(course => <ShowHome
                           key={course.id}
