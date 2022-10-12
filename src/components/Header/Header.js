@@ -13,9 +13,9 @@ const Header = () => {
           />
         </div>
         <div>
+          <h2 className="text-2xl font-semibold">Improve your skills with quizzes. </h2>
           <p>
-            Here are quizzes on four topics. Each topic has
-            different quizzes. And you can give practical answer on each topic.
+            Text your skills by answering quizzes on four topics. You can see multiple quizzes on one topic here. You can easily inject your knowledge improve. And you can give practical answer on each topic.
             And you will know whether your answer is right or wrong. And here in
             the blog there are some questions and also answers..
           </p>
