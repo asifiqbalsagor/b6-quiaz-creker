@@ -18,36 +18,31 @@ const Navbar = () => {
             title="Company"
             class="inline-flex items-center"
           >
-            <div className="flex items-center">
-              <span>Strong</span>
-              <img
-                className="w-12"
-                src="https://www.logolynx.com/images/logolynx/d1/d16be8c4701395972a4c753e93de1217.jpeg"
-                alt=""
-              />
-            </div>
+            <h2 className="text-2xl font-semibold text-deco">
+              Skill Improvement
+            </h2>
           </NavLink>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
-                to="/course"
+                to="/home"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Course
+                Home
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/recharts"
+                to="/statistics"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Rechart
+                Statistics
               </NavLink>
             </li>
             <li>

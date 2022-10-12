@@ -16,10 +16,10 @@ const HomeRoute = () => {
           </div>
            <div className="w-8/12 mx-auto">
            {
-            courseQuiz.map(quiz => <DisplayQuiz
+            courseQuiz.map((quiz, index) => <DisplayQuiz
             key={quiz.id}
             quiz={quiz}
-            data={data}
+            index={index}
             ></DisplayQuiz>)
            }
            </div>
