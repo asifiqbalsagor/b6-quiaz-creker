@@ -33,7 +33,7 @@ function App() {
           path: "/home/:homeId",
           loader:  ({ params }) => {
             return fetch(
-              `https://openapi.programming-hero.com/api/quiz/${params.courseId}`
+              `https://openapi.programming-hero.com/api/quiz/${params.homeId}`
             );
           },
           element: <HomeRoute></HomeRoute>,

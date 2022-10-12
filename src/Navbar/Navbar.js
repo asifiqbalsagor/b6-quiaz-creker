@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="bg-blue-200">
       <div className="navbar  w-10/12 mx-auto ">
         <div className="flex-1">
-          <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+          <Link className="btn btn-ghost normal-case text-xl">Skill improvement</Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">

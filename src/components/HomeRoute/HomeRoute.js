@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import DisplayQuiz from '../DisplayQuiz/DispalyQuiz';
+import DisplayQuiz from '../DisplayQuiz/DisplayQuiz';
 
 const HomeRoute = () => {
     const course = useLoaderData();
